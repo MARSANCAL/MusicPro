@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MusicPro</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="home">
+    <!-- Navegation -->
+<header class="sticky">
+    <a href="#" class="logo">MusicPro<span>.</span></a>
+    <div class="menuToggle" onclick="toggleMenu();"></div>
+    <ul class="navigation">
+        <li><a href="#banner" onclick="toggleMenu();">Inicio</a></li>
+        <li><a href="#about" onclick="toggleMenu();">Acerca de Nosotros</a></li>
+        <li><a href="contacto.html" onclick="toggleMenu();">Contacto</a></li>
+        <li><a href="#productos" onclick="toggleMenu();">Menu</a></li>
+        <li><a href="#productos" onclick="toggleMenu();">Productos</a></li>
+
+    </ul>
+</header>
+<!-- Banner -->
+<section class="banner" id="banner">
+    <div class="content">
+        <h2>Contigo Siempre MusicPro</h2>
+        <p>Excelentes Intrumentos y accesorios musicales  con sus marcas mas conocidas y favoritas.<br>
+             Proquela música es el mejor antídoto contra el estrés. <br>
+             Encuentra la relajación y el equilibrio en nuestra selección de instrumentos y accesorios de música...</p>
+        <a href="productos.html" class="btn">Ver productos</a>
+    </div>
+</section>
+<!--About -->
+<section class="about" id="about">
+    <div class="row">
+        <div class="col50">
+            <h2 class="tittleText"><span>A</span>cerca de Nosotros</h2>
+            <p>Somos una tienda de instrumentos musicales profesionales  ubicada en la comuna de Providencia en Santiago de Chile desde el año 1988 y con  sedes repartidas por la región metropolitana, las cuales están se encuentran en Maipú desde el 2001, Santiago desde el 2003, y Vitacura desde el 2010, abarcando así una gran área de la región antes mencionada y haciendo más fácil su distribución de productos.<br><br> 
+                 Los distintos instrumentos y accesorios que se pueden encontrar en “MUSIC PRO” son diversos, van desde guitarras acústicas, guitarras eléctricas de 6 a 8 cuerdas, bajos activos y pasivos de 4 a 6 cuerdas, sets de batería, amplificadores, cabezales, accesorios y además artículos como audífonos, parlantes, interfaces, adaptadores, pedales, cuerdas, etc.,<br><br>  
+                 Todo esto es posible gracias a que “MUSIC PRO”  tiene trato con marcas reconocidas del área como Ibáñez, ESP, Gibson, Jackson Marshall, y muchas más que hacen que sea una tienda diversa y muy solicitada por la variedad y calidad de sus productos.   <br><br> 
+            </p>
+        </div>
+        <div class="col50">
+            <div class="imgBx">
+                <img src="img/pexels-dmitriy-ganin-8653686.jpg" alt="background">
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+
+<div>
+    <section id="informacion">
+    <h2>Información de la empresa</h2>
+    <ul>
+      <li><strong>Dirección:</strong> Calle: Juanito Fernandez, Ciudad: Providencia</li>
+      <li><strong>Teléfono:</strong> 332-676-559</li>
+      <li><strong>Correo electrónico:</strong> contacto@musicpro.cl</li>
+    </ul>
+    </section>
+</div>
+
+<script src="main.js"></script>
+</html>
