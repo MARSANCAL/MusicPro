@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css?family=Poppins: 200,300,400,500,600,700,800,900&display=swap');
 * {
     margin: 0;
@@ -323,4 +324,331 @@ font-family: 'Poppins', sans-serif;
 text-shadow: -1px -1px 1px #000, 1px 1px 1px #000, -1px 1px 1px #000, 1px -1px 1px #000;
 -webkit-text-fill-color: #fff;
 -webkit-text-stroke: 2px black;
+=======
+@import url('https://fonts.googleapis.com/css?family=Poppins: 200,300,400,500,600,700,800,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+p {
+    font-weight: 300;
+    color: #111;
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    min-height:100svh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("img/pexels-stephen-niemeier-65718.jpg");
+    background-size: cover;
+}
+
+.banner .content {
+    max-width: 900px;
+    text-align: center;
+}
+
+.banner .content h2 {
+    font-size: 5em;
+    color: #fff;
+}
+
+.banner .content p {
+    font-size: 1em;
+    color: #fff;
+}
+
+.btn {
+    font-size: 1em;
+    color: #fff;
+    background: #ff0157;
+    display: inline-block;
+    padding: 10px 30px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+
+.btna{
+    font-size: 1em;
+    color: #fff;
+    background: #ff0157;
+    display: inline-block;
+    padding: 10px 30px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.form a.btn-round{
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    background: #ff0157;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: 0.5s;
+    margin-top: 20px;
+}
+
+.centroG{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form a.btn-round:hover {
+    border-color: #fff;
+    box-shadow: 0 9px 12px -9px #ff0157;
+    letter-spacing: 6px;
+}
+
+.btn:hover {
+    letter-spacing: 6px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0 auto;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 10000;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    transition: 0.5s;
+}
+
+header.sticky {
+    background: #fff;
+    padding: 10px 100px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+header .logo {
+    color: #fff;
+    font-weight: 700;
+    font-size: 2em;
+    text-decoration: none;
+}
+
+header.sticky .logo {
+    color: #111;
+}
+
+header .logo span {
+    color: #ff0157;
+}
+
+header .navigation {
+    position: relative;
+    display: flex;
+    margin: 5px;
+    list-style-type:none;
+}
+
+header .navigation li {
+    list-style: none;
+    margin-left: 30px;
+
+
+    
+}
+
+header .navigation li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 300;
+    padding: 20px 15px;
+
+}
+
+header.sticky .navigation li a {
+    color: #111;
+}
+
+header .navigation li a:hover {
+    color: #ff0157;
+}
+
+section {
+    padding: 100px;
+}
+.row {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.row .col50 {
+    position: relative;
+    width: 48%;
+}
+
+.tittleText {
+    color: #111;
+    font-size: 2em;
+    font-weight: 300;
+}
+
+.tittleText span {
+    color: #ff0157;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+.row .col50 .imgBx {
+    position: relative;
+    width: 100%;
+    /*min-height: 300px;*/
+    height: 100%;
+}
+
+.row .col50 .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.tittle {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* --------Productos-------- */
+.container {
+	max-width: 1000px;
+	margin:auto;
+	padding: 20px;
+}
+
+.product-row {
+    float: left;
+    width: 1100px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-bottom: 20px;
+    left: 300px;
+    top: 50px;
+    position: relative;
+    
+}
+
+.card {
+	flex: 1 0 30%;
+	margin-bottom: 20px;
+	padding: 20px;
+	background-color: #fffdfdbb;
+	border: 8px solid #ff0157;
+	text-align: center;
+}
+
+.card img {
+	max-width: 100%;
+	margin-bottom: 10px;
+}
+
+.card h2 {
+	font-size: 1.5rem;
+	margin-bottom: 10px;
+}
+
+.card p {
+	font-size: 1.2rem;
+	margin-bottom: 10px;
+}
+
+.card .price {
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+
+.img_card{
+    width: 100%;
+    height: 324px;
+}
+
+/*filtro*/
+
+.wrap>h1:after{
+    content:'';
+    width: 100%;
+    height: 1px;
+    background: #C7C7C7;
+    margin: 20px 0;
+}
+
+.wrap{
+ width: 100%;
+ height: 100%;
+ position: absolute;
+ top: 20px;
+ 
+ 
+}
+.store-wrapper{
+    display: flex;
+}
+
+.category_list{
+     display: flex;
+     padding: 10px;
+     flex-direction: column;
+     width: 18%;
+}
+
+.product-list{
+    width: 100%;
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
+
+.category_list .categori_item{
+  display: block;
+  width: 90%;  
+  padding: 15px 0;
+  margin-bottom: 20px;
+  background: #ff0157;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+}
+
+.category_list .ct_item-active{
+background: #2d3e50;
+}
+
+
+/*BORDE DE LETRAS*/
+.stroke{
+    text-align: center;
+color: #fff;
+font-family: 'Poppins', sans-serif;
+text-shadow: -1px -1px 1px #000, 1px 1px 1px #000, -1px 1px 1px #000, 1px -1px 1px #000;
+-webkit-text-fill-color: #fff;
+-webkit-text-stroke: 2px black;
+>>>>>>> 901004b (añadido repositorio por consola)
 }
