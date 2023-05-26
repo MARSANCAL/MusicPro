@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css?family=Poppins: 200,300,400,500,600,700,800,900&display=swap');
 * {
     margin: 0;
@@ -324,7 +323,7 @@ font-family: 'Poppins', sans-serif;
 text-shadow: -1px -1px 1px #000, 1px 1px 1px #000, -1px 1px 1px #000, 1px -1px 1px #000;
 -webkit-text-fill-color: #fff;
 -webkit-text-stroke: 2px black;
-=======
+
 @import url('https://fonts.googleapis.com/css?family=Poppins: 200,300,400,500,600,700,800,900&display=swap');
 * {
     margin: 0;
@@ -334,7 +333,7 @@ text-shadow: -1px -1px 1px #000, 1px 1px 1px #000, -1px 1px 1px #000, 1px -1px 1
     scroll-behavior: smooth;
 }
 
-p {
+.p {
     font-weight: 300;
     color: #111;
 }
@@ -420,7 +419,7 @@ p {
     letter-spacing: 6px;
 }
 
-header {
+.header {
     position: fixed;
     top: 0;
     left: 0 auto;
@@ -433,35 +432,35 @@ header {
     transition: 0.5s;
 }
 
-header.sticky {
+.header .sticky {
     background: #fff;
     padding: 10px 100px;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
 }
 
-header .logo {
+.header .logo {
     color: #fff;
     font-weight: 700;
     font-size: 2em;
     text-decoration: none;
 }
 
-header.sticky .logo {
+.header.sticky .logo {
     color: #111;
 }
 
-header .logo span {
+.header .logo span {
     color: #ff0157;
 }
 
-header .navigation {
+.header .navigation {
     position: relative;
     display: flex;
     margin: 5px;
     list-style-type:none;
 }
 
-header .navigation li {
+.header .navigation li {
     list-style: none;
     margin-left: 30px;
 
@@ -469,7 +468,7 @@ header .navigation li {
     
 }
 
-header .navigation li a {
+.header .navigation li a {
     text-decoration: none;
     color: #fff;
     font-weight: 300;
@@ -477,15 +476,15 @@ header .navigation li a {
 
 }
 
-header.sticky .navigation li a {
+.header.sticky .navigation li a {
     color: #111;
 }
 
-header .navigation li a:hover {
+.header .navigation li a:hover {
     color: #ff0157;
 }
 
-section {
+.section {
     padding: 100px;
 }
 .row {
@@ -645,10 +644,10 @@ background: #2d3e50;
 /*BORDE DE LETRAS*/
 .stroke{
     text-align: center;
-color: #fff;
-font-family: 'Poppins', sans-serif;
-text-shadow: -1px -1px 1px #000, 1px 1px 1px #000, -1px 1px 1px #000, 1px -1px 1px #000;
--webkit-text-fill-color: #fff;
--webkit-text-stroke: 2px black;
->>>>>>> 901004b (añadido repositorio por consola)
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    text-shadow: -1px -1px 1px #000, 1px 1px 1px #000, -1px 1px 1px #000, 1px -1px 1px #000;
+    -webkit-text-fill-color: #fff;
+    -webkit-text-stroke: 2px black;
+}
 }

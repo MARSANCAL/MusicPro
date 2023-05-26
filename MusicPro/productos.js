@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 $(document).ready(function(){
 
 	// AGREGANDO CLASE ACTIVE AL PRIMER ENLACE ====================
@@ -35,7 +34,8 @@ $(document).ready(function(){
 			$('.product-item').css('transform', 'scale(1)');
 		} setTimeout(showAll,400);
 	});
-=======
+})
+
 $(document).ready(function(){
 
 	// AGREGANDO CLASE ACTIVE AL PRIMER ENLACE ====================
@@ -72,5 +72,5 @@ $(document).ready(function(){
 			$('.product-item').css('transform', 'scale(1)');
 		} setTimeout(showAll,400);
 	});
->>>>>>> 901004b (añadido repositorio por consola)
-});
+
+})
