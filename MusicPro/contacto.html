@@ -37,27 +37,27 @@
 </section>
 <!--About -->
 <br><br><br>
-<div class="container">
+    <div class="container">
     <form class="row g-3">
         <div class="col-md-6">
         <label for="inputname" class="form-label">Nombres</label>
-        <input type="name" class="form-control" id="inputname"  placeholder="Luis enrique">
+        <input type="name" class="form-control" id="inputname"  placeholder="Luis enrique" required pattern="[A-Za-z]+">
         </div>
         <div class="col-md-6">
         <label for="inputlastnames" class="form-label">Apellidos</label>
-        <input type="lastnames" class="form-control" id="inputlastnames" placeholder="Leiva Lopes">
+        <input type="lastnames" class="form-control" id="inputlastnames" placeholder="Leiva Lopes"  required pattern="[A-Za-z]+">
         </div>
         <div class="col-md-6">
         <label for="inputphone" class="form-label">Telefono</label>
-        <input type="phone" class="form-control" id="inputphone"  placeholder="+56 9 1234 5678">
+        <input type="phone" class="form-control" id="inputphone"  placeholder="+56 9 1234 5678" required pattern="[0-9]+">
         </div>
         <div class="col-md-6">
         <label for="inputId" class="form-label">Rut</label>
-        <input type="Id" class="form-control" id="inputId" placeholder="20.666.888-0">
+        <input type="Id" class="form-control" id="inputId" placeholder="20.666.888-0" required pattern="[A-Z0-9]+">
         </div>
         <div class="col-12">
         <label for="inputEmail" class="form-label">Correo Electronico</label>
-        <input type="email" class="form-control" id="inputEmail" placeholder="usuario@gmail.com">
+        <input type="email" class="form-control" id="inputEmail" placeholder="usuario@gmail.com" required pattern="[A-Za-z0-9]+">
         </div>
         <div class="col-12">
         <label for="inputAddress" class="form-label">Dirección</label>
@@ -65,11 +65,11 @@
         </div>
         <div class="col-md-6">
         <label for="inputRegion" class="form-label">Region</label>
-        <input type="text" class="form-control" id="inputRegion" placeholder="Valparaiso">
+        <input type="text" class="form-control" id="inputRegion" placeholder="Valparaiso" required pattern="[A-Za-z]+">
         </div>
         <div class="col-md-6">
         <label for="inputCommune" class="form-label">Comuna</label>
-        <input type="text" class="form-control" id="inputCommune" placeholder="Valparaiso">
+        <input type="text" class="form-control" id="inputCommune" placeholder="Valparaiso" required pattern="[A-Za-z]+">
         </div>
 
         <label for="inputCommune" class="form-label">Mensaje</label>
