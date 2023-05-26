@@ -201,4 +201,345 @@ section {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+} 
+
+
+.categoria .content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.categoria .content .box {
+    width: 340px;
+    border: 15px solid #fff;
+    box-shadow: 0 5px 35px rgba(0, 0, 0, 0.08);
+}
+
+.categoria .content .box .imgBx {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    
+}
+
+.categoria .content .box .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.categoria .content .box .text {
+    padding: 15px 0 5px;
+}
+
+.categoria .content .box .text h3 {
+    font-weight: 400;
+    color: #111;
+}
+.btn_box{
+    text-decoration: none;
+}
+.btn_box:hover{
+    cursor: pointer;
+    transition: 0.5s;
+    transform: scale(1.1);
+    border: 1px solid #ff0157;
+    box-shadow: 0px -10px 20px #ff0157;
+}
+
+.marcas .content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 40px;
+}
+
+.marcas .content .box {
+    width: 250px;
+    margin: 15px;
+}
+
+.marcas .content .box .imgBx {
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+
+.marcas .content .box .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.marcas .content .box .text {
+    padding: 15px 0 5px;
+}
+
+.marcas .content .box .text h3 {
+    font-weight: 400;
+    color: #111;
+}
+
+
+/* SOCIAL PANEL CSS */
+
+.social-panel-container {
+    position: fixed;
+    right: 0;
+    bottom: 80px;
+    transform: translateX(100%);
+    transition: transform 0.4s ease-in-out;
+}
+
+.social-panel-container.visible {
+    transform: translateX(-10px);
+}
+
+.social-panel {
+    background-color: #fff;
+    border-radius: 16px;
+    box-shadow: 0 16px 31px -17px rgba(0, 0, 0, 0.6);
+    border: 5px solid #ff0157;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 169px;
+    width: 370px;
+    max-width: calc(100% - 10px);
+}
+
+.social-panel button.close-btn {
+    border: 0;
+    color: #97A5CE;
+    cursor: pointer;
+    font-size: 20px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+.social-panel button.close-btn:focus {
+    outline: none;
+}
+
+.social-panel p {
+    background-color: #ff0157;
+    border-radius: 0 0 10px 10px;
+    color: #fff;
+    font-size: 14px;
+    line-height: 18px;
+    padding: 2px 17px 6px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin: 0;
+    transform: translateX(-50%);
+    text-align: center;
+    width: 235px;
+}
+
+.social-panel p i {
+    margin: 0 5px;
+}
+
+.social-panel p a {
+    color: #ff0157;
+    text-decoration: none;
+}
+
+.social-panel h4 {
+    margin: 20px 0;
+    color: #111;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+}
+
+.social-panel ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.social-panel ul li {
+    margin: 0 10px;
+}
+
+.social-panel ul li a {
+    border: 1px solid #DCE1F2;
+    border-radius: 50%;
+    color: #ff0157;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    text-decoration: none;
+}
+
+.social-panel ul li a:hover {
+    border-color: #ff0157;
+    box-shadow: 0 9px 12px -9px #ff0157;
+}
+
+.floating-btn {
+    border-radius: 26.5px;
+    background-color: #ff0157;
+    border: 1px solid #ff0157;
+    box-shadow: 0 16px 22px -17px #3b0312;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 12px 20px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+}
+
+.floating-btn:hover {
+    background-color: #ffffff;
+    color: #ff0157;
+}
+
+.floating-btn:focus {
+    outline: none;
+}
+
+@media (max-width: 991px) {
+    header,
+    header .sticky {
+        padding: 10px 20px;
+    }
+    header .navigation {
+        display: none;
+    }
+    header .navigation.active {
+        width: 100%;
+        height: calc(100% - 68px);
+        position: fixed;
+        top: 68px;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: #fff;
+    }
+    header .navigation li {
+        margin-left: 0;
+    }
+    header .navigation li a {
+        color: #111;
+        font-size: 1.6em;
+    }
+    .menuToggle {
+        position: relative;
+        width: 40px;
+        height: 40px;
+        background: url('../img/menu.png');
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+    }
+    .menuToggle.active {
+        background: url('../img/x.png');
+        background-size: 25px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    header.sticky .menuToggle {
+        filter: invert(1);
+    }
+    section {
+        padding: 20px;
+    }
+    .banner .content h2 {
+        font-size: 3em;
+        color: #fff;
+    }
+    .row {
+        flex-direction: column;
+    }
+    .row .col50 {
+        position: relative;
+        width: 100%;
+    }
+    .row .col50 .imgBx {
+        height: 300px;
+        margin-top: 20px;
+    }
+    .menu .content {
+        margin-top: 20px;
+    }
+    .menu .content .box {
+        margin: 10px;
+    }
+    .menu .content .box .imgBx {
+        height: 260px;
+    }
+    .carta .content {
+        margin-top: 20px;
+    }
+    .carta .content .box {
+        margin: 10px;
+    }
+    .carta .content .box .imgBx {
+        height: 260px;
+    }
+    .tittle {
+        text-align: center;
+    }
+    .tittleText {
+        font-size: 1.8em;
+        line-height: 1.5em;
+        margin-bottom: 15px;
+        font-weight: 300;
+    }
+    .testimonials .content .box {
+        margin: 10px;
+        padding: 20px;
+    }
+    .container {
+        margin-top: 60px;
+    }
+    .form {
+        padding: 35px 40px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+    .content-table {
+        margin-top: 50px;
+    }
+    @media(max-width:480px) {
+        .banner .content h2 {
+            font-size: 2.2em;
+            color: #fff;
+        }
+    }
+    @media screen and (max-width: 480px) {
+        .social-panel-container.visible {
+            transform: translateX(0px);
+        }
+        .floating-btn {
+            right: 10px;
+        }
+    }
 }
