@@ -141,7 +141,8 @@ header .navigation li a:hover {
     justify-content: center;
 }
 #contenedor{
-    padding: 10px;
+    
+    padding: 30px 20px 20px 20px;
     background-color: #fffdfde7;
     border: 2px solid #ff0157;
     box-shadow: 0 5px 30px 10px red;
