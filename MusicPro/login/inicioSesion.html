@@ -11,45 +11,47 @@
 </head>
 <body class="home">
     <!-- Navegation -->
-<header class="sticky">
-    <a href="#" class="logo">MusicPro<span>.</span></a>
-    <div class="menuToggle" onclick="toggleMenu();"></div>
-    <div class="search-container">
-    </div>
-    <ul class="navigation">
-        <li><a href="/template/index.html" onclick="toggleMenu();">Inicio</a></li>
-        <li><a href="#about" onclick="toggleMenu();">Acerca de Nosotros</a></li>
-        <li><a href="/template/contacto.html" onclick="toggleMenu();">Contacto</a></li>
-        <li><a href="/template/productos.html" onclick="toggleMenu();">Productos</a></li>
-        <li><a href="/template/inicioSesion.html" onclick="toggleMenu();">Iniciar Sesion</a></li>
-
-
-    </ul>
-</header>
-
-<!--About -->
-<br><br><br>
-<div class="container" id="contenedor">
-    <form class="row g-3">
-        <div class="col-md-6">
-        <label for="inputEmail" class="form-label">Correo Electronico</label>
-        <input type="email" class="form-control" id="inputEmail" placeholder="usuario@gmail.com" required pattern="[A-Za-z0-9]+">
+    <header class="sticky">
+        <a href="#" class="logo">MusicPro<span>.</span></a>
+        <div class="menuToggle" onclick="toggleMenu();"></div>
+        <div class="search-container">
         </div>
-        
-        <div class="col-md-6">
-        <label for="pass1" >Contraseña</label>
-        <input type="contraseña" class="form-control" id="pass1" ppass1laceholder="Debe contener al menos: (A,a,0,-)" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+        <ul class="navigation">
+            <li><a href="/template/index.html" onclick="toggleMenu();">Inicio</a></li>
+            <li><a href="#about" onclick="toggleMenu();">Acerca de Nosotros</a></li>
+            <li><a href="/template/contacto.html" onclick="toggleMenu();">Contacto</a></li>
+            <li><a href="/template/productos.html" onclick="toggleMenu();">Productos</a></li>
+            <li><a href="/template/inicioSesion.html" onclick="toggleMenu();">Iniciar Sesion</a></li>
+
+
+        </ul>
+    </header>
+
+    <!--About -->
+    <section id="formulario" class="formulario">
+        <div class="contenedor" id="contenedor">
+            <form class="login">
+                <div class="correo">
+                    <label for="inputEmail" class="label_log">Correo Electronico</label>
+                <input type="email" class="form-control" id="inputEmail" placeholder="usuario@gmail.com" required pattern="[A-Za-z0-9]+">
+                </div>
+                
+                <div class="contraseña">
+                    <label for="pass1" class="label_log" >Contraseña</label>
+                    <input type="contraseña" class="form-control" id="pass1" ppass1laceholder="Debe contener al menos: (A,a,0,-)" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+                </div>
+            
+                
+                <button type="submit" class="btn_ingresar">Ingresar </button>
+                
+            </form>
+            <div class="other">
+                <a href="Registro.html">
+                <button type="submit" class="btn_registrar" >Crear Usuario</button> </a>
+            </div>
         </div>
+    </section>
     
-        <div class="col-sm-6">
-        <button type="submit" class="btn btn-primary">Ingresar </button>
-        </div>
-    </form>
-        <div class="col-sm-6">
-        <a href="Registro.html">
-        <button type="submit" class="btn btn-primary" >Crear Usuario</button> </a>
-        </div>
-</div>
 </body>
 <script src="/js/main.js"></script>
 </html>
