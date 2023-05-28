@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MusicPro</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="vendedor.css">
+<title>Sitio de Ventas</title>
+</head>
+<body class="home">
+  <!-- NAVEGADOR -->
+  <header class="sticky">
+      <a href="#" class="logo">MusicPro-Ventas<span>.</span></a>
+      <div class="menuToggle" onclick="toggleMenu();"></div>
+      <ul class="navigation">
+          <li><a href="#banner" onclick="toggleMenu();">Inicio</a></li>
+          <li><a href="#list_not" onclick="toggleMenu();">Notificaciones</a></li>
+          <li><a href="#pagos" onclick="toggleMenu();">Pagos efectuados</a></li>
+          <li><a href="#entregados" onclick="toggleMenu();">Productos entregados</a></li>
+          <li><a href="inicioSesion.html" onclick="toggleMenu();">Cerrar Sesion</a></li>
+      </ul>
+  </header>
+  <br><br><br>
+<h2>Pedidos Pendientes</h2>
+<table id="ordersTable">
+<thead>
+<tr>     
+<th>Número de Pedido</th>      
+<th>Cliente</th>
+<th>Productos</th>
+<th>Acciones</th>
+</tr>
+</thead>
+<tbody>    
+<!-- Aquí puedes generar las filas dinámicamente con los datos de los pedidos -->
+</tbody>
+</table>
+
+<div class="container" > 
+<h2>Stock de Productos e Instrumentos</h2>
+<form id="revisaOrderForm">
+<a href="stock.html"></a>
+<button type="btn-round" class="btna btn-primary">Revisar Stock </button>
+</form>
+</div>
+
+<div class="container">
+<h2>Enviar Orden al Bodeguero</h2>
+<form id="orderForm">
+<label for="product">Producto:</label>
+<input type="text" id="product" name="product" required>
+<label for="quantity">Cantidad:</label>
+<input type="number" id="quantity" name="quantity" required>
+<button type="submit" class="btna btn-primary">Enviar Orden</button>
+</form> 
+</div>
+
+<div class="container">
+<h2>Enviar Orden de Despacho al Cliente</h2>
+<form id="dispatchForm">
+<label for="orderNumber">Número de Pedido:</label>
+<input type="text" id="orderNumber" name="orderNumber" required>
+<button type="submit" class="btna btn-primary">Enviar Orden de Despacho</button>
+</form>
+</div>
+
+
+<script src="script.js"></script>
+</body>
+</html>
