@@ -9,7 +9,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet"/>
     <link rel="stylesheet" href="inicioSecion.css">
 </head>
-<body class="home">
+<body id="home">
     <!-- Navegation -->
     <header class="sticky">
         <a href="#" class="logo">MusicPro<span>.</span></a>
@@ -33,7 +33,7 @@
             <form class="login">
                 <div class="correo">
                     <label for="inputEmail" class="label_log">Correo Electronico</label>
-                <input type="email" class="form-control" id="inputEmail" placeholder="usuario@gmail.com" required pattern="[A-Za-z0-9]+">
+                <input type="email" class="form-control" id="inputEmail" placeholder="Usuario@gmail.com" required pattern="[A-Za-z0-9]+">
                 </div>
                 
                 <div class="contraseña">
@@ -51,6 +51,30 @@
             </div>
         </div>
     </section>
+
+    <footer id="footer">
+        <div class=" fila">
+            <h3>Contacto</h3>
+            <hr class="line_footer">
+            <div class="columna">
+                <h5 bodyF>Telefono: <a href="tel:" class="hvf">+56 9 xxx xxx xx</a></h5>
+            </div>
+        </div>
+        <div class=" fila">
+            <h3>Enlace</h3>
+            <hr class="line_footer">
+            <div class="columna">
+                <h5 class="bodyF">Instagram: <a href="http://Instagram.com" target="_blank" rel="noopener noreferrer" class="hvf">@MusicPro</a></h5>
+              <h5 class="bodyF">Facebook: <a href="http://Facebook.com" target="_blank" rel="noopener noreferrer" class="hvf">MusicPro</a></h5>
+
+            </div>
+        </div>
+
+        <div class="fila">
+            <h3 id="Copyright">Copyright 2023</h3>
+        </div>
+
+    </footer>
     
 </body>
 <script src="/js/main.js"></script>

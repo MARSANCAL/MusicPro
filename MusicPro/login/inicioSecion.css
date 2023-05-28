@@ -4,9 +4,15 @@
     padding: 0;
     font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
-    background-image: url("/img/fondoL.jpg");
+    ;
 }
-
+#home{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("/MusicPro/img/fondoL.jpg")
+    
+    
+}
 p {
     font-weight: 300;
     color: #111;
@@ -130,12 +136,16 @@ header .navigation li a:hover {
 /*formulario*/
 
 #formulario{
+    display: flex;
     margin-top: 150px;
+    justify-content: center;
 }
 #contenedor{
-    padding: 50px;
-    background-color: #fffdfdbb;
-    border: 8px solid #ff0157;
+    padding: 10px;
+    background-color: #fffdfde7;
+    border: 2px solid #ff0157;
+    box-shadow: 0 5px 30px 10px red;
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
     min-height: 350px;
@@ -145,19 +155,85 @@ header .navigation li a:hover {
 }
 .login{
     display: flex;
+    width: 100%;
     flex-direction: column;
-    gap: 40px;
+    gap: 10px;
     align-items: center;
 }
+.form-control{
+    text-align: left;
+}
+.correo{
+    padding-top: 30px;
+
+}
 .correo, .contraseña{
+    width: 300px;
     justify-content: center;
     text-align: center;
 
 }
+.btn_ingresar{
+    margin-top: 30px;
+}
+.btn_ingresar, .btn_registrar{
+    padding: 5px;
+    border: 1px solid transparent;
+    color: white;
+    border-radius: 5px;
+    background: #ff0157;
 
+}
+.btn_ingresar:hover, .btn_registrar:hover{
+    border: 1px solid black;
+    color: black;
+    box-shadow: 0 1px 2px 3px gray;
+
+}
 .other{
     margin-top: 20px;
 }
 
+#footer{
+    margin-top: 100px;
+    padding: 0 25px;
+    width: 100%;
+    height: 250px;
+    background: #212121;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
 
+}
+
+.fila{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    
+}
+.line_footer{
+    margin: 2px;
+}
+.columna{
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.bodyf{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.hvf{
+    text-decoration: underline;
+    color:gray
+}
+
+.hvf:hover{
+    cursor: pointer;
+    color: red;
+}
+#Copyright{
+    text-decoration: underline;
+}
 
