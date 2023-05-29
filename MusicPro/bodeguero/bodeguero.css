@@ -74,6 +74,12 @@ header .navigation li a:hover {
     color: #ff0157;
 }
 
+/*---------------tabla------------*/
+#ordenes{
+    margin: 150px 30px 0px 30px;
+    
+}
+
 .btna {
     font-size: 1em;
     color: #fff;
@@ -85,13 +91,32 @@ header .navigation li a:hover {
     text-decoration: none;
     transition: 0.5s;
 }
+.pendientes{
+    
+    padding: 40px;
+    width: 900px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+.tab_order{
+    overflow-y: auto;
+    border: 1px solid black;
+  }
 
-table {
-    border-collapse: collapse;
-    width: 100%;
+.tab_order table {
+    border-collapse: separate;
+    border-spacing: 0;
   }
   
-  th, td {
+.tab_order table thead {
+    position: sticky;
+    background-color: gray;
+    top: 0;
+    left: 0;
+  }
+.pendientes th, .pendientes td {
     border: 1px solid black;
     padding: 8px;
     text-align: left;
@@ -106,3 +131,4 @@ table {
     font-weight: 300;
     color: #111;
 }
+
