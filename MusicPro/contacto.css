@@ -155,6 +155,10 @@ header .navigation li a:hover {
 section {
     padding: 100px;
 }
+
+#contacto{
+    margin-top: 40px;
+}
 .row {
     position: relative;
     width: 100%;
@@ -208,4 +212,54 @@ textarea{
     min-height: 100px;
     max-height: 200px;
     max-width: 100%;
+}
+.container{
+    border: 1px solid transparent;
+    border-radius: 10px;
+    box-shadow: 0 1px 2px 3px gray;
+    padding: 30px;
+
+}
+#footer{
+    margin-top: 100px;
+    padding: 0 25px;
+    width: 100%;
+    height: 250px;
+    background: #212121;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+
+}
+
+.fila{
+    padding: 30px;
+    
+    display: flex;
+    flex-direction: column;
+    color: white;
+    
+}
+.line_footer{
+    margin: 2px;
+}
+.columna{
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.bodyf{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.hvf{
+    text-decoration: underline;
+    color:gray
+}
+
+.hvf:hover{
+    cursor: pointer;
+    color: red;
+}
+#Copyright{
+    text-decoration: underline;
 }

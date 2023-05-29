@@ -26,69 +26,88 @@
 
     </ul>
 </header>
-<!-- Banner -->
-<section class="banner" id="banner">
-    <div class="content">
-        <h2 class="rr">Contigo Siempre MusicPro</h2>
-        <p>Excelentes Intrumentos y accesorios musicales  con sus marcas mas conocidas y favoritas.<br>
-        Proquela música es el mejor antídoto contra el estrés. <br>
-        Encuentra la relajación y el equilibrio en nuestra selección de instrumentos y accesorios de música...</p>
+<!--About -->
+<section id="contacto">
+    <div class="container">
+        <form class="row g-3">
+            <div class="col-md-6">
+            <label for="inputname" class="form-label">Nombres</label>
+            <input type="name" class="form-control" id="inputname"  placeholder="Luis enrique">
+            </div>
+            <div class="col-md-6">
+            <label for="inputlastnames" class="form-label">Apellidos</label>
+            <input type="lastnames" class="form-control" id="inputlastnames" placeholder="Leiva Lopes">
+            </div>
+            <div class="col-md-6">
+            <label for="inputphone" class="form-label">Telefono</label>
+            <input type="phone" class="form-control" id="inputphone"  placeholder="+56 9 1234 5678">
+            </div>
+            <div class="col-md-6">
+            <label for="inputId" class="form-label">Rut</label>
+            <input type="Id" class="form-control" id="inputId" placeholder="20.666.888-0">
+            </div>
+            <div class="col-12">
+            <label for="inputEmail" class="form-label">Correo Electronico</label>
+            <input type="email" class="form-control" id="inputEmail" placeholder="usuario@gmail.com">
+            </div>
+            <div class="col-12">
+            <label for="inputAddress" class="form-label">Dirección</label>
+            <input type="text" class="form-control" id="inputAddress" placeholder="Departamento/Casa #354 Av J.J.Nuñes">
+            </div>
+            <div class="col-md-6">
+            <label for="inputRegion" class="form-label">Region</label>
+            <input type="text" class="form-control" id="inputRegion" placeholder="Valparaiso">
+            </div>
+            <div class="col-md-6">
+            <label for="inputCommune" class="form-label">Comuna</label>
+            <input type="text" class="form-control" id="inputCommune" placeholder="Valparaiso">
+            </div>
+    
+            <label for="inputCommune" class="form-label">Mensaje</label>
+            <textarea name="mensaje"  placeholder="Escribenos el motivo de tu contacto..."></textarea>
+    
+            <div class="filebrowser sapn2" onclick="document.getElementById('con_document_con').click()">
+            <label for="inputZip" class="form-label">Zip</label>
+            <input type="text" class="form-control" id="inputZip" placeholder="Elija un archivo (PDF,documento de Word,Jpng, rar, zip,etc..)">
+            <span class="filetext"></span>
+            <input type="file" accept=".jpg,.jpeg,.png,.doc,.docx,.pdf" class="input-file-contacto"
+            name="con_documento_con" id="con_documento_con" />
+            <p class="help-block" style="color: red" id="con_documento_con_error"></p>
+            </div>
+        
+            <div class="col-12">
+            <button type="submit" class="btn btn-primary">Enviar </button>
+            </div>
+        </form>
     </div>
 </section>
-<!--About -->
-<br><br><br>
-<div class="container">
-    <form class="row g-3">
-        <div class="col-md-6">
-        <label for="inputname" class="form-label">Nombres</label>
-        <input type="name" class="form-control" id="inputname"  placeholder="Luis enrique">
+<footer id="footer">
+    <div class="fila">
+        <h2>Contacto</h2>
+        <hr class="line_footer">
+        <div class="columna">
+            <ul>
+            <li><strong>Dirección:</strong> <a href="" class="hvf">Calle Juanito Fernandez, Ciudad: Providencia</a> </li>
+            <li><strong>Teléfono:</strong> <a href="tel:332-676-559" class="hvf">332-676-559</a> </li>
+            <li><strong>Correo electrónico:</strong> <a href="mailto:contacto@musicpro.cl" class="hvf">contacto@musicpro.cl</a> </li>
+            </ul>
         </div>
-        <div class="col-md-6">
-        <label for="inputlastnames" class="form-label">Apellidos</label>
-        <input type="lastnames" class="form-control" id="inputlastnames" placeholder="Leiva Lopes">
-        </div>
-        <div class="col-md-6">
-        <label for="inputphone" class="form-label">Telefono</label>
-        <input type="phone" class="form-control" id="inputphone"  placeholder="+56 9 1234 5678">
-        </div>
-        <div class="col-md-6">
-        <label for="inputId" class="form-label">Rut</label>
-        <input type="Id" class="form-control" id="inputId" placeholder="20.666.888-0">
-        </div>
-        <div class="col-12">
-        <label for="inputEmail" class="form-label">Correo Electronico</label>
-        <input type="email" class="form-control" id="inputEmail" placeholder="usuario@gmail.com">
-        </div>
-        <div class="col-12">
-        <label for="inputAddress" class="form-label">Dirección</label>
-        <input type="text" class="form-control" id="inputAddress" placeholder="Departamento/Casa #354 Av J.J.Nuñes">
-        </div>
-        <div class="col-md-6">
-        <label for="inputRegion" class="form-label">Region</label>
-        <input type="text" class="form-control" id="inputRegion" placeholder="Valparaiso">
-        </div>
-        <div class="col-md-6">
-        <label for="inputCommune" class="form-label">Comuna</label>
-        <input type="text" class="form-control" id="inputCommune" placeholder="Valparaiso">
-        </div>
+    </div>
+    <div class=" fila">
+        <h3>Enlace</h3>
+        <hr class="line_footer">
+        <div class="columna">
+            <h5 class="bodyF">Instagram: <a href="http://Instagram.com" target="_blank" rel="noopener noreferrer" class="hvf">@MusicPro</a></h5>
+          <h5 class="bodyF">Facebook: <a href="http://Facebook.com" target="_blank" rel="noopener noreferrer" class="hvf">MusicPro</a></h5>
 
-        <label for="inputCommune" class="form-label">Mensaje</label>
-        <textarea name="mensaje"  placeholder="Escribenos el motivo de tu contacto..."></textarea>
+        </div>
+    </div>
 
-        <div class="filebrowser sapn2" onclick="document.getElementById('con_document_con').click()">
-        <label for="inputZip" class="form-label">Zip</label>
-        <input type="text" class="form-control" id="inputZip" placeholder="Elija un archivo (PDF,documento de Word,Jpng, rar, zip,etc..)">
-        <span class="filetext"></span>
-        <input type="file" accept=".jpg,.jpeg,.png,.doc,.docx,.pdf" class="input-file-contacto"
-        name="con_documento_con" id="con_documento_con" />
-        <p class="help-block" style="color: red" id="con_documento_con_error"></p>
-        </div>
-    
-        <div class="col-12">
-        <button type="submit" class="btn btn-primary">Enviar </button>
-        </div>
-    </form>
-</div>
+    <div class="fila">
+        <h3 id="Copyright">Copyright 2023</h3>
+    </div>
+
+</footer>
 </body>
 <script src="main.js"></script>
 </html>
