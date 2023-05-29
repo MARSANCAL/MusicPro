@@ -19,8 +19,8 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url("img/pexels-stephen-niemeier-65718.jpg");
-    background-size: cover;
+    background: url("/MusicPro/img/fondoC.jpg");
+    background-size: contain;
 }
 
 .banner .content {
@@ -265,26 +265,6 @@ section {
 
 /*filtro*/
 
-.wrap>h1:after{
-    content:'';
-    width: 100%;
-    height: 1px;
-    background: #C7C7C7;
-    margin: 20px 0;
-}
-
-.wrap{
- width: 100%;
- height: 100%;
- position: absolute;
- top: 20px;
- 
- 
-}
-.store-wrapper{
-    display: flex;
-}
-
 .category_list{
      display: flex;
      padding: 10px;
@@ -292,7 +272,7 @@ section {
      width: 18%;
 }
 
-.product-list{
+.categori{
     width: 100%;
     position: relative;
     padding: 0;
