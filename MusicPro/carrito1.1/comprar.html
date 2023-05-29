@@ -74,42 +74,58 @@
       <h1>Ubicacion</h1>
       <div class="fila">
 
-        <fieldset class="columna_from">
-          <label class="title_select">Region</label>
-          <select name="región" id="región">
-              <option value="0: null"> Selecciona una Región </option>
-              <option value="1: Object" class="selec_opc"> Región Metropolitana </option><!----><!---->
-              <option value="2: Object" class="selec_opc"> Región de Tarapacá </option><!----><!---->
-              <option value="3: Object" class="selec_opc"> Región de Antofagasta </option><!----><!---->
-              <option value="4: Object" class="selec_opc"> Región de Atacama </option><!----><!---->
-              <option value="5: Object" class="selec_opc"> Región de Coquimbo </option><!----><!---->
-              <option value="6: Object" class="selec_opc"> Región de Valparaíso </option><!----><!---->
-              <option value="7: Object" class="selec_opc"> Región del Libertador Gral. Bernardo O’Higgins</option><!----><!---->
-              <option value="8: Object" class="selec_opc"> Región del Maule </option><!----><!---->
-              <option value="9: Object" class="selec_opc"> Región del Bío Bío </option><!----><!---->
-              <option value="10: Object" class="selec_opc"> Región de la Araucanía </option><!----><!---->
-              <option value="11: Object" class="selec_opc"> Región de los Lagos </option><!----><!---->
-              <option value="12: Object" class="selec_opc"> Región de los Ríos </option><!----><!---->
-              <option value="13: Object" class="selec_opc"> Región de Arica y Parinacota </option><!----><!---->
-              <option value="14: Object" class="selec_opc"> Región del Ñuble </option><!----><!----><!---->
-          </select>
-        </fieldset>
-
-        <!-- <label for="inputRegion" class="form-label">Region</label>
-          <input type="text" class="form-control" id="inputRegion" placeholder="Valparaiso" required
-            pattern="[A-Za-z]+" /> -->
-
-        <div class="columna">
-          <label for="inputCommune" class="form-label">Comuna</label>
-          <input type="text" class="form-control" id="inputCommune" placeholder="Vina del Mar" required
-            pattern="[A-Za-z]+" />
+        <div class="select_cont">
+          <fieldset class="columna_from">
+            <label class="title_select">Region</label>
+            <div name="región" id="region">
+              <option value="0: null"> Region Metropolitana </option>
+            </div>
+          </fieldset>
         </div>
 
-        <div class="columna">
-          <label for="inputRegion" class="form-label">Sucursal</label>
-          <input type="text" class="form-control" id="inputRegion" placeholder="Calle Juanito Fernandez " required
-            pattern="[A-Za-z]+" />
+
+
+        <div class="select_cont">
+          <fieldset class="columna_from">
+            <label class="title_selectC">Comuna</label>
+            <select name="comuna" id="comuna">
+              <option value="0: null"> Selecciona una Comuna </option>
+              <option value="1: Object" class="select_opc"> Cerrillos </option>
+              <option value="2: Object" class="select_opc"> Estación Central </option>
+              <option value="3: Object" class="select_opc"> Huechuraba </option>
+              <option value="4: Object" class="select_opc"> Independencia </option>
+              <option value="5: Object" class="select_opc"> La Florida </option>
+              <option value="6: Object" class="select_opc"> Las Condes </option>
+              <option value="7: Object" class="select_opc"> Lo Barnechea </option>
+              <option value="8: Object" class="select_opc"> Maipú </option>
+              <option value="9: Object" class="select_opc"> Melipilla </option>
+              <option value="10: Object" class="select_opc"> Peñalolén </option>
+              <option value="11: Object" class="select_opc"> Providencia </option>
+              <option value="12: Object" class="select_opc"> Puente Alto </option>
+              <option value="13: Object" class="select_opc"> Quilicura </option>
+              <option value="14: Object" class="select_opc"> San Bernardo </option>
+              <option value="15: Object" class="select_opc"> San Miguel </option>
+              <option value="16: Object" class="select_opc"> Santiago </option>
+              <option value="17: Object" class="select_opc"> Ñuñoa </option><!----><!----><!---->
+            </select>
+
+            </select>
+          </fieldset>
         </div>
+
+
+
+        <div class="select_cont">
+          <fieldset class="columna_from">
+            <label class="title_selectS">Sucursal</label>
+            <div name="sucursal" id="sucursal">
+              <option value="0: null"> no disponible </option>
+            </div>
+          </fieldset>
+        </div>
+
+
+
         <div class="boton">
           <button type="submit" class="btn_enviar btn btn-danger">Enviar</button>
         </div>

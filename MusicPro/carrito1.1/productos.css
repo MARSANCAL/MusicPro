@@ -232,28 +232,82 @@ header .navigation li a:hover {
 }
 
 #miVentana1{
-    display: block;
+    display: none;
     position: absolute;
     border:1px solid black;
     border-radius: 10px;
     background: #fff;
     width: 500px;
+    translate: 70%;
+    top: 70px;
     height: 650px;
     padding: 40px;
 }
-#región{
+
+.fila{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    gap: 30px;
+}
+.select_cont{
+    position: relative;
+}
+#region{
+    border: 1px solid black;
+    width: 200px;
+    border-radius: 10px;
+    padding: 10px 6px;
+
+}
+#comuna{
+    border: 1px solid black;
+    height: 50px;
+    border-radius: 10px;
+    padding: 10px 6px;
+
+}
+#sucursal {
+    height: 50px;
+    width: 230px;
     border: 1px solid black;
     border-radius: 10px;
     padding: 10px 6px;
+    
 }
-.title_select{
+.columna_from{
+    height: 65px;
+    padding: 10px 0;
+}
+.title_select {
     position: absolute;
     background-color: #fff;
-    left: 45px;
-    top: 87px;
+    left: 10px;
+    top: 0px;
     padding: 0 4px;
     font-size: 12px;
     font-weight: 400;
+}
+.title_selectC{
+    position: absolute;
+    background-color: #fff;
+    left: 10px;
+    top: 0;
+    padding: 0 4px;
+    font-size: 12px;
+    font-weight: 400;
+
+}
+
+.title_selectS{
+    position: absolute;
+    background-color: #fff;
+    left: 15px;
+    top: 0px;
+    padding: 0 4px;
+    font-size: 12px;
+    font-weight: 400;
+
 }
 
 .contenido {
