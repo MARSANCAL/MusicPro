@@ -212,9 +212,10 @@ section {
 /* --------Productos-------- */
 .carrito {
     display: flex;
-	width: 100%;
-	margin:10px;
-	padding: 20px;
+    
+	max-width: 100%;
+    padding: 0;
+	margin: 20px;
 }
 .categori{
     width: 200px;
@@ -304,8 +305,8 @@ section {
 }
 
 .img_product{
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 150px;
     object-fit: contain;
     justify-content: center;
 
