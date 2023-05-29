@@ -26,3 +26,10 @@ document.getElementById("btnAbrir2").addEventListener("click", function() {
 document.getElementById("btnCerrar2").addEventListener("click", function() {
   document.getElementById("miVentana2").style.display = "none";
 });
+
+var maxLength = 5;
+$('#example > option').text(function(i, text) {
+    if (text.length > maxLength) {
+        return text.substr(0, maxLength) + '...';  
+    }
+});
