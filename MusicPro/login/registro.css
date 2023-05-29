@@ -142,7 +142,8 @@ header .navigation li a:hover {
 #contenedor{
     padding: 10px;
     background-color: #d8d4d4f3;
-    border: 8px solid #ff0157;	
+    border: 8px solid #ff0157;
+    box-shadow: 0 5px 30px 10px red;	
     border-radius: 10px;
     min-height: 550px;
     width: 800px;
