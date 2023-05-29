@@ -2,10 +2,43 @@
 const baseDeDatos = [
     {
         id: 1,
-        nombre: 'Patata',
+        nombre: 'Guitarra Electrica',
+        precio: 14000,
+        imagen: '/MusicPro/img/guitarra-electrica-ibanez-grx70qa.jpg',
+        descripcion:'producto de calidad en precio de contenido y bla bla bla',
+        cantidad:30
+    },
+    {
+        id: 2,
+        nombre: 'Cebolla',
         precio: 1,
-        imagen: '',
+        imagen: 'cebolla.jpg',
         descripcion:'',
+        cantidad:5
+    },
+    {
+        id: 3,
+        nombre: 'Calabacin',
+        precio: 2,
+        imagen: 'calabacin.jpg',
+        descripcion:'',
+        cantidad:5
+    },
+    {
+        id: 4,
+        nombre: 'Fresas',
+        precio: 9,
+        imagen: 'fresas.jpg',
+        descripcion:'jjj',
+        cantidad:5
+    },
+
+    {
+        id: 1,
+        nombre: 'Guitarra Electrica',
+        precio: 14000,
+        imagen: '/MusicPro/img/guitarra-electrica-ibanez-grx70qa.jpg',
+        descripcion:'producto de calidad en precio de contenido y bla bla bla',
         cantidad:30
     },
     {
@@ -37,7 +70,7 @@ const baseDeDatos = [
 
 let carrito = [];
 const DOMitems = document.querySelector('#items');
-const DOMcarrito = document.querySelector('#carrito');
+const DOMcarrito = document.querySelector('#list_carr');
 const DOMtotal = document.querySelector('#total');
 const DOMbotonVaciar = document.querySelector('#boton-vaciar');
 
@@ -50,25 +83,26 @@ function renderizarProductos() {
     baseDeDatos.forEach((info) => {
         // Estructura
         const miNodo = document.createElement('div');
-        miNodo.classList.add('card', 'col-sm-4');
+        miNodo.classList.add('tarjeta');
+ 
         // Body
         const miNodoCardBody = document.createElement('div');
-        miNodoCardBody.classList.add('card-body');
+        miNodoCardBody.classList.add('cuerpoT');
         // Titulo
         const miNodoTitle = document.createElement('h5');
-        miNodoTitle.classList.add('card-title');
+        miNodoTitle.classList.add('tituloT');
         miNodoTitle.textContent = info.nombre;
         // Imagen
         const miNodoImagen = document.createElement('img');
-        miNodoImagen.classList.add('img-fluid');
+        miNodoImagen.classList.add('img_product');
         miNodoImagen.setAttribute('src', info.imagen);
         // Precio
-        const miNodoPrecio = document.createElement('p');
-        miNodoPrecio.classList.add('card-text');
-        miNodoPrecio.textContent = `${info.precio}`;
+        const miNodoPrecio = document.createElement('h2');
+        miNodoPrecio.classList.add('priceT');
+        miNodoPrecio.textContent = `$ ${info.precio}`;
         // Descripcion
         const miNodoDescr = document.createElement('p');
-        miNodoDescr.classList.add('card-text');
+        miNodoDescr.classList.add('descriptionT');
         miNodoDescr.textContent = info.descripcion;
         // Boton 
         const miNodoBoton = document.createElement('button');
@@ -77,6 +111,7 @@ function renderizarProductos() {
         miNodoBoton.setAttribute('marcador', info.id);
         miNodoBoton.addEventListener('click', anyadirProductoAlCarrito);
         // Insertamos
+    
         miNodoCardBody.appendChild(miNodoImagen);
         miNodoCardBody.appendChild(miNodoTitle);
         miNodoCardBody.appendChild(miNodoPrecio);
@@ -120,11 +155,11 @@ function renderizarCarrito() {
         }, 0);
         // Creamos el nodo del item del carrito
         const miNodo = document.createElement('li');
-        miNodo.classList.add('list-group-item', 'text-right', 'mx-2');
-        miNodo.textContent = `${numeroUnidadesItem} x ${miItem[0].nombre} - ${miItem[0].precio}`;
+        miNodo.classList.add('listado');
+        miNodo.textContent = `${numeroUnidadesItem} x $ ${miItem[0].precio}  ${miItem[0].nombre}  `;
         // Boton de borrar
         const miBoton = document.createElement('button');
-        miBoton.classList.add('btn', 'btn-danger', 'mx-5');
+        miBoton.classList.add('btn_borrar');
         miBoton.textContent = 'X';
         miBoton.style.marginLeft = '1rem';
         miBoton.dataset.item = item;
@@ -163,7 +198,7 @@ function calcularTotal() {
         });
         // Los sumamos al total
         return total + miItem[0].precio;
-    }, 0).toFixed(2);
+    }, 0);
 }
 
 /**
