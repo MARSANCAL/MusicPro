@@ -19,8 +19,11 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url("img/pexels-stephen-niemeier-65718.jpg");
     background-size: cover;
+}
+body{
+    
+    background: url("/MusicPro/img/fondoC.jpg");
 }
 
 .banner .content {
@@ -214,6 +217,7 @@ textarea{
     max-width: 100%;
 }
 .container{
+    background: white;
     border: 1px solid transparent;
     border-radius: 10px;
     box-shadow: 0 1px 2px 3px gray;
