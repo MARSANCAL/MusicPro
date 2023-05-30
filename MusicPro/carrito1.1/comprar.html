@@ -35,28 +35,31 @@
     </ul>
   </header>
   <section id="fase_compra">
-    <div class="carro" id="carro" calss="col-sm-6">
-      <div class="contorno">
-        <!-- Carrito -->
-        <aside class="cuerpoC">
-          <h2>Carrito</h2>
-          <!-- Elementos del carrito -->
-          <table>
-            <ul id="carrito" class="list-group"></ul>
-          </table>
-          <hr>
-          <!-- Precio total -->
-          <p class="text-right">Total: $ <span id="total"></span></p>
-          <button id="boton-vaciar" class="btn btn-danger">Vaciar</button>
-          <button class="btn btn-danger"><a href="/Users/MAS/Desktop/comprar/comprar.html"
-              class="btn_comprar">Comprar</a></button>
-        </aside>
+    <div id="not_float">
+      <div class="carro" id="carro" calss="col-sm-6">
+        <div class="contorno">
+          <!-- Carrito -->
+          <aside class="cuerpoC">
+            <h2>Carrito</h2>
+            <!-- Elementos del carrito -->
+            <table>
+              <ul id="carrito" class="list-group"></ul>
+            </table>
+            <hr>
+            <!-- Precio total -->
+            <p class="text-right">Total: $ <span id="total"></span></p>
+            <button id="boton-vaciar" class="btn btn-danger">Vaciar</button>
+            <button class="btn btn-danger"><a href="/Users/MAS/Desktop/comprar/comprar.html"
+                class="btn_comprar">Comprar</a></button>
+          </aside>
+        </div>
+      </div>
+  
+      <div class="btn_contenedor">
+        <button id="btnAbrir" class="btn btn-danger">Elejir Tipo de Despacho</button>
       </div>
     </div>
-
-    <div class="btn_contenedor">
-      <button id="btnAbrir" class="btn btn-danger">Elejir Tipo de Despacho</button>
-    </div>
+    
 
 
     <div class="ventanaEmergente" id="miVentana">
@@ -72,7 +75,7 @@
 
     <div class="ventanaEmergente" id="miVentana1">
       <h1>Ubicacion</h1>
-      <div class="fila">
+      <div class="columna">
 
         <div class="select_cont">
           <fieldset class="columna_from">
@@ -137,48 +140,58 @@
     <!--retiro en tienda-->
 
     <div class="ventanaEmergente" id="miVentana2">
-      <div class="contenido">
-        <!--formulario retiro en tienda-->
-        <form class="contenido" id="contenedor">
-          <h1>Formulario Retiro en Tienda
-          </h1>
-          <div class="fila">
-            <div class="columna">
-              <label for="inputname" class="form-label">Nombres</label>
-              <input type="name" class="form-control" id="inputname" placeholder="Luis enrique" required
-                pattern="[A-Za-z]+" />
-            </div>
-            <div class="columna">
-              <label for="inputlastnames" class="form-label">Apellidos</label>
-              <input type="lastnames" class="form-control" id="inputlastnames" placeholder="Leiva Lopes" required
-                pattern="[A-Za-z]+" />
-            </div>
+
+
+      <!--formulario retiro en tienda-->
+      <form class="retiro" id="retiro">
+        <h1>Despacho a Domicilio</h1>
+        <div class="title_fila">
+          <h6>Datos de Quien Recibe la entrega</h6></div>
+        <div class="fila">
+          
+          <div class="columna">
+            <label for="inputname" class="form-label">Nombres</label>
+            <input type="name" class="form-control" id="inputname" placeholder="Luis enrique" required
+              pattern="[A-Za-z]+" />
+          </div>
+          <div class="columna">
+            <label for="inputlastnames" class="form-label">Apellidos</label>
+            <input type="lastnames" class="form-control" id="inputlastnames" placeholder="Leiva Lopes" required
+              pattern="[A-Za-z]+" />
           </div>
 
+          
+        </div>
+
+
+
+        <div class="fila">
+          <div class="columna">
+            <label for="comentario" class="form-label">comentario</label>
+            <textarea name="comentario" id="textarea_cont" cols="50" rows="10"></textarea>
+          </div>
+        </div>
+
+        <div class="fila">
           <div class="Columna">
             <label for="inputphone" class="form-label">Telefono</label>
             <input type="phone" class="form-control" id="inputphone" placeholder="+56 9 1234 5678" required
               pattern="[0-9]+" />
           </div>
-      </div>
-      <div class="fila">
-        <div class="columna">
-          <label for="inputCommune" class="form-label">Comuna</label>
-          <input type="text" class="form-control" id="inputCommune" placeholder="Vina del Mar" required
-            pattern="[A-Za-z]+" />
         </div>
-        <div class="columna">
-          <label for="inputRegion" class="form-label">Region</label>
-          <input type="text" class="form-control" id="inputRegion" placeholder="Valparaiso" required
-            pattern="[A-Za-z]+" />
-        </div>
+
         <div class="boton">
           <button type="submit" class="btn_enviar btn btn-danger">Enviar</button>
         </div>
-      </div>
+
+        <div class="boton">
+          <button id="btnCerrar2" class="btn btn-danger">Cerrar</button>
+        </div>
       </form>
+
+
       <!--boton cerrar despacho-->
-      <button id="btnCerrar2" class="btn btn-danger">Cerrar</button>
+
     </div>
 
     <button id="btnCerrar" class="btn btn-danger">X</button>

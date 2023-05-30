@@ -230,6 +230,12 @@ header .navigation li a:hover {
     color: white;
     padding: 50px;
 }
+#not_float{
+    display: flex;
+    backdrop-filter: none;
+    flex-direction: row;
+
+}
 
 #miVentana1{
     display: none;
@@ -240,14 +246,13 @@ header .navigation li a:hover {
     width: 500px;
     translate: 70%;
     top: 70px;
-    height: 650px;
+    height: 555px;
     padding: 40px;
 }
 
 .fila{
     display: flex;
-    flex-direction: column;
-    margin-top: 50px;
+    flex-direction: row;
     gap: 30px;
 }
 .select_cont{
@@ -274,6 +279,13 @@ header .navigation li a:hover {
     border-radius: 10px;
     padding: 10px 6px;
     
+}
+#miVentana1 .columna{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    gap: 10px;
+
 }
 .columna_from{
     height: 65px;
@@ -318,6 +330,35 @@ header .navigation li a:hover {
   padding: 20px;
   text-align: center;
   border-radius: 5px;
+}
+
+#miVentana2{
+    display: none;
+    position: absolute;
+    width: 500px;
+    border-radius: 10px;
+    height: 812px;
+    translate: 70%;
+
+}
+
+.contenido{
+    margin: 0;
+}
+#retiro{
+    border-radius: 10px;
+    color: black;
+    border: 1px solid black;
+    background: white;
+    padding: 40px;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.title_fila{
+    display: flex;
+    margin-top: 40px;
 }
 
 #btnAbrir {
