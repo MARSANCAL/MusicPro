@@ -232,7 +232,7 @@ header .navigation li a:hover {
 }
 #not_float{
     display: flex;
-    backdrop-filter: none;
+    filter: blur(5px);
     flex-direction: row;
 
 }

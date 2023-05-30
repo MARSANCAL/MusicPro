@@ -2,7 +2,7 @@
 document.getElementById("btnAbrir").addEventListener("click", function() {
   document.getElementById("miVentana").style.display = "block";
   document.getElementById("btnCerrar").style.display = "block";
-  document.getElementById("not_float").style.backdropFilter = "blur(100px)";
+  document.getElementById("not_float").style.filter = "blur(5px)";
 });
 
 document.getElementById("btnCerrar").addEventListener("click", function() {
