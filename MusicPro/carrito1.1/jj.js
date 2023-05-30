@@ -8,7 +8,7 @@ document.getElementById("btnAbrir").addEventListener("click", function() {
 document.getElementById("btnCerrar").addEventListener("click", function() {
   document.getElementById("miVentana").style.display = "none";
   document.getElementById("btnCerrar").style.display = "none";
-  document.getElementById("not_float").style.backdropFilter = "none";
+  document.getElementById("not_float").style.filter = "blur(0px)";
 });
 //formurmulario retiro en tienda
 document.getElementById("btnAbrir1").addEventListener("click", function() {
