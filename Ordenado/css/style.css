@@ -19,7 +19,7 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url("img/pexels-stephen-niemeier-65718.jpg");
+    background: url("/Ordenado/img/pexels-stephen-niemeier-65718.jpg");
     background-size: cover;
 }
 
