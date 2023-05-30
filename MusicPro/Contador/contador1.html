@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contabilidad</title>
+    <link rel="stylesheet" href="contador.css">
+</head>
+<body class="home">
+    <!-- NAVEGADOR -->
+    <header class="sticky">
+        <a href="#" class="logo">MusicPro-Contabilidad<span>.</span></a>
+        <div class="menuToggle" onclick="toggleMenu();"></div>
+        <ul class="navigation">
+          <li><a href="#banner" onclick="toggleMenu();">Inicio</a></li>
+          <li><a href="#list_not" onclick="toggleMenu();">Notificaciones</a></li>
+          <li><a href="#pagos" onclick="toggleMenu();">Pagos efectuados</a></li>
+          <li><a href="#entregados" onclick="toggleMenu();">Productos entregados</a></li>
+          <li><a href="inicioSesion.html" onclick="toggleMenu();">Cerrar Sesion</a></li>
+        </ul>
+    </header>
+    <br><br>
+    <!-- CUADRO DE NOTIFICACIONES Y LISTA DE PEDIDOS -->
+    <section id="Pedidos" class="pedidos">
+        <div class="list_pedidos">
+            <table></table>
+        </div>
+
+    </section>
+
+    <br><br><br>
+ <section id="ordenes">
+    <!-- Visualizar órdenes de pedido -->
+    <div id="pendientes" class="pendientes">
+      <h2 class="titulo">Órdenes Pendientes</h2>
+      <div class="tab_order">
+        <table>
+          <thead>
+            <tr>
+              <th>Número de Orden</th>
+              <th>Fecha de Pedido</th>
+              <th>Cliente</th>
+              <th>Productos</th>
+              <th>Estado</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Aquí puedes generar las filas dinámicamente con los datos de las órdenes -->
+            <tr>
+              <td>1</td>
+              <td>2023-05-27</td>
+              <td>Cliente 1</td>
+              <td>Producto A, Producto B, Producto C</td>
+              <td>Pendiente</td>
+            </tr>
+  
+            <tr>
+              <td>1</td>
+              <td>2023-05-27</td>
+              <td>Cliente 1</td>
+              <td>Producto A, Producto B, Producto C</td>
+              <td>Pendiente</td>
+            </tr>
+
+            <tr>
+              <td>1</td>
+              <td>2023-05-27</td>
+              <td>Cliente 1</td>
+              <td>Producto A, Producto B, Producto C</td>
+              <td>Pendiente</td>
+            </tr>
+
+            <tr>
+              <td>1</td>
+              <td>2023-05-27</td>
+              <td>Cliente 1</td>
+              <td>Producto A, Producto B, Producto C</td>
+              <td>Pendiente</td>
+            </tr>
+
+            <tr>
+              <td>1</td>
+              <td>2023-05-27</td>
+              <td>Cliente 1</td>
+              <td>Producto A, Producto B, Producto C</td>
+              <td>Pendiente</td>
+            </tr>
+
+            
+
+            
+
+          </tbody>
+        </table>
+      </div>
+      
+    </div>
+    
+    <!-- Aceptar órdenes de pedido -->
+    <h2>Aceptar Órdenes</h2>
+    <form id="acceptOrderForm">
+      <label for="orderNumber">Número de Orden:</label>
+      <input type="text" id="orderNumber" name="orderNumber" required>
+
+      <button type="btn-round" class="btna btn-primary">Aceptar Orden</button>
+    </form>
+
+    <!-- Despachar órdenes de pedido -->
+    <h2>Despachar Órdenes</h2>
+    <form id="dispatchOrderForm">
+      <label for="orderNumber">Número de Orden:</label>
+      <input type="text" id="orderNumber" name="orderNumber" required>
+
+      <button type="btn-round" class="btna">Despachar Orden</button>
+    </form>
+  </section>
+
+    <!-- FOOTER -->
+    <footer id="footer" class="footer">
+
+    </footer>
+
+</body>
+</html>
