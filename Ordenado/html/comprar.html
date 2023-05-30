@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0">
+  <title>MusicPro-Productos</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="/Ordenado/css/comprar.css">
+
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap" rel="stylesheet" class="nn">
+
+</head>
+
+<body>
+  <!-- Navegation -->
+  <header class="sticky">
+    <a href="#" class="logo">MusicPro<span>.</span></a>
+    <div class="menuToggle" onclick="toggleMenu();"></div>
+    <ul class="navigation">
+
+      <li><a href="index.html" onclick="toggleMenu();">Inicio</a></li>
+      <li><a href="#about" onclick="toggleMenu();">Acerca de Nosotros</a></li>
+      <li><a href="contacto.html" onclick="toggleMenu();">Contacto</a></li>
+      <li><a href="#productos" onclick="toggleMenu();">Menu</a></li>
+      <li><a href="#productos" onclick="toggleMenu();">Productos</a></li>
+
+    </ul>
+  </header>
+  <section id="fase_compra">
+    <div id="not_float">
+      <div class="carro" id="carro" calss="col-sm-6">
+        <div class="contorno">
+          <!-- Carrito -->
+          <aside class="cuerpoC">
+            <h2>Carrito</h2>
+            <!-- Elementos del carrito -->
+            <table>
+              <ul id="carrito" class="list-group"></ul>
+            </table>
+            <hr>
+            <!-- Precio total -->
+            <p class="text-right">Total: $ <span id="total"></span></p>
+            <button id="boton-vaciar" class="btn btn-danger">Vaciar</button>
+            <button class="btn btn-danger"><a href="/Users/MAS/Desktop/comprar/comprar.html"
+                class="btn_comprar">Comprar</a></button>
+          </aside>
+        </div>
+      </div>
+  
+      <div class="btn_contenedor">
+        <button id="btnAbrir" class="btn btn-danger">Elejir Tipo de Despacho</button>
+      </div>
+    </div>
+    
+
+
+    <div class="ventanaEmergente" id="miVentana">
+      <div class="opc_conten" id="opc_conten">
+        <h2>Seleccione el tipo de Despacho</h2>
+        <!--botones-->
+        <button id="btnAbrir1" class="btn btn-danger">Retiro en Tienda</button>
+        <button id="btnAbrir2" class="btn btn-danger">Despacho a Domicilio</button>
+
+      </div>
+    </div>
+    <!-- despacho-->
+
+    <div class="ventanaEmergente" id="miVentana1">
+      <h1>Ubicacion</h1>
+      <div class="columna">
+
+        <div class="select_cont">
+          <fieldset class="columna_from">
+            <label class="title_select">Region</label>
+            <div name="región" id="region">
+              <option value="0: null"> Region Metropolitana </option>
+            </div>
+          </fieldset>
+        </div>
+
+
+
+        <div class="select_cont">
+          <fieldset class="columna_from">
+            <label class="title_selectC">Comuna</label>
+            <select name="comuna" id="comuna">
+              <option value="0: null"> Selecciona una Comuna </option>
+              <option value="1: Object" class="select_opc"> Cerrillos </option>
+              <option value="2: Object" class="select_opc"> Estación Central </option>
+              <option value="3: Object" class="select_opc"> Huechuraba </option>
+              <option value="4: Object" class="select_opc"> Independencia </option>
+              <option value="5: Object" class="select_opc"> La Florida </option>
+              <option value="6: Object" class="select_opc"> Las Condes </option>
+              <option value="7: Object" class="select_opc"> Lo Barnechea </option>
+              <option value="8: Object" class="select_opc"> Maipú </option>
+              <option value="9: Object" class="select_opc"> Melipilla </option>
+              <option value="10: Object" class="select_opc"> Peñalolén </option>
+              <option value="11: Object" class="select_opc"> Providencia </option>
+              <option value="12: Object" class="select_opc"> Puente Alto </option>
+              <option value="13: Object" class="select_opc"> Quilicura </option>
+              <option value="14: Object" class="select_opc"> San Bernardo </option>
+              <option value="15: Object" class="select_opc"> San Miguel </option>
+              <option value="16: Object" class="select_opc"> Santiago </option>
+              <option value="17: Object" class="select_opc"> Ñuñoa </option><!----><!----><!---->
+            </select>
+
+            </select>
+          </fieldset>
+        </div>
+
+
+
+        <div class="select_cont">
+          <fieldset class="columna_from">
+            <label class="title_selectS">Sucursal</label>
+            <div name="sucursal" id="sucursal">
+              <option value="0: null"> no disponible </option>
+            </div>
+          </fieldset>
+        </div>
+
+
+
+        <div class="boton">
+          <button type="submit" class="btn_enviar btn btn-danger">Enviar</button>
+        </div>
+      </div>
+      </dialog>
+      <!--boton cerrar despacho-->
+      <button id="btnCerrar1" class="btn btn-danger">Atras</button>
+    </div>
+    <!--retiro en tienda-->
+
+    <div class="ventanaEmergente" id="miVentana2">
+
+
+      <!--formulario retiro en tienda-->
+      <form class="retiro" id="retiro">
+        <h1>Despacho a Domicilio</h1>
+        <div class="title_fila">
+          <h6>Datos de Quien Recibe la entrega</h6></div>
+        <div class="fila">
+          
+          <div class="columna">
+            <label for="inputname" class="form-label">Nombres</label>
+            <input type="name" class="form-control" id="inputname" placeholder="Luis enrique" required
+              pattern="[A-Za-z]+" />
+          </div>
+          <div class="columna">
+            <label for="inputlastnames" class="form-label">Apellidos</label>
+            <input type="lastnames" class="form-control" id="inputlastnames" placeholder="Leiva Lopes" required
+              pattern="[A-Za-z]+" />
+          </div>
+
+          
+        </div>
+
+
+
+        <div class="fila">
+          <div class="columna">
+            <label for="comentario" class="form-label">comentario</label>
+            <textarea name="comentario" id="textarea_cont" cols="50" rows="10"></textarea>
+          </div>
+        </div>
+
+        <div class="fila">
+          <div class="Columna">
+            <label for="inputphone" class="form-label">Telefono</label>
+            <input type="phone" class="form-control" id="inputphone" placeholder="+56 9 1234 5678" required
+              pattern="[0-9]+" />
+          </div>
+        </div>
+
+        <div class="boton">
+          <button type="submit" class="btn_enviar btn btn-danger">Enviar</button>
+        </div>
+
+        <div class="boton">
+          <button id="btnCerrar2" class="btn btn-danger">Cerrar</button>
+        </div>
+      </form>
+
+
+      <!--boton cerrar despacho-->
+
+    </div>
+
+    <button id="btnCerrar" class="btn btn-danger">X</button>
+
+
+
+  </section>
+
+</body>
+<script src="/Ordenado/js/comprar.js"></script>
+<script src="/Ordenado/js/carrito.js"></script>
+
+</html>
